@@ -9,6 +9,7 @@ const Calculator = (req, res) => {
     res.write("</form>");
     res.write("</body></html>");
     return res.end();
+    //github changes are reflected 
 
   } if (req.url === "/Calculator" && req.method === "POST") {
     res.setHeader("Content-Type", "text/html");
@@ -43,6 +44,7 @@ const Calculator = (req, res) => {
         const first = Number(fulldata.get('First-value'));
         const second = Number(fulldata.get('Second-value'));
         const sum = first + second;
+        //new changes reflected
 
     res.setHeader("Content-Type", "text/html");  
     res.write("<html><body>");
